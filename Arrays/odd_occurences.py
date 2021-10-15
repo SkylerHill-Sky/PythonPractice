@@ -34,8 +34,8 @@ def odd_occurences_with_sort(A):
     if we exclusive or all of the numbers it should equal zero
     else it would be the difference
 """
-def odd_occurences_with_exclusive_or(A): 
+def odd_occurences_with_exclusive_or(a: [int]) -> int: 
     diff = 0
-    for number in A:
+    for number in a:
         diff ^= number
     return diff
