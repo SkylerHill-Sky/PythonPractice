@@ -14,4 +14,3 @@ def binary_gap(N):
 
     return (max_gap)
     
-# print(binary_gap(1000000000000000000000000020))

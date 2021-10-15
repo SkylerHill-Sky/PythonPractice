@@ -1,7 +1,7 @@
 from math import sqrt, floor
 
 # largest number would be 2^16
-def is_Prime(num):
+def is_prime(num):
     for x in range( 2, floor( sqrt(num)) ):
         if num % x == 0:
             print("It's divisible by", x)
@@ -9,7 +9,6 @@ def is_Prime(num):
 
     return True
 
-# print(is_Prime(1230987623144987))
 
 
 # I wanted to say that I don't have as much experience with Python as I do with C#

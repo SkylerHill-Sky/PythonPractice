@@ -15,11 +15,27 @@
     returns the value of the unpaired element.
 """
 
-def odd_occurences(A):
-    
-    
-    pass
 
+# find odd occurence by sorting
+def odd_occurences_with_sort(A):     
+    if len(A) == 1:
+        return A[0]
 
+    A.sort()
 
-print( odd_occurences([0, 3, 9, 3, 9, 7, 9]) )
+    for i in range(0 , len(A)-1 , 2):    # moving up twice at a time 
+        if A[i] != A[i+1]:  # comparing next index
+            return A[i]
+    return A[i]
+
+"""
+    find odd occurence by taking difference with exclusive or
+
+    if we exclusive or all of the numbers it should equal zero
+    else it would be the difference
+"""
+def odd_occurences_with_exclusive_or(A): 
+    diff = 0
+    for number in A:
+        diff ^= number
+    return diff
