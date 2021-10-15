@@ -1,8 +1,8 @@
 import pytest
-from logic import BinaryGap
-from logic import isPrime
-from logic import RotateArray
-from logic import SerialNumber
+from Iterating import BinaryGap
+from Iterating import isPrime
+from Iterating import RotateArray
+from Iterating import SerialNumber
 
 assert BinaryGap.binary_gap(1000000000000000000000000020) == 22
 
