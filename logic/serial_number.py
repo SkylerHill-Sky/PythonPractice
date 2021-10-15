@@ -7,7 +7,7 @@ def serial_old(strPar):
         numbers = []
         for i in range(3):
             numbers.append( list(map(int, strings[i])) ) # 1 check that it's all digits
-        print(strings, numbers)
+        # print(strings, numbers)
 
         for i in range(3):
             if not (numbers[i][2] > numbers[i][1] and numbers[i][2] > numbers[i][0]) :
@@ -33,7 +33,7 @@ def serial_with_list_comprehension(strPar):
 
         # 1 check that it's all digits
         first, second, third = [ list(map(int, strings[i])) for i in range(3) ]
-        print(strings, first, second, third)
+        # print(strings, first, second, third)
 
         # 4 check that the last digit is the greatest in each substring
         for numbers in [first, second, third]:
@@ -51,5 +51,5 @@ def serial_with_list_comprehension(strPar):
 
     return True
 
-print( serial_old('123.124.123') )
-print( serial_with_list_comprehension('123.124.123') )
+# print( serial_old('123.124.123') )
+# print( serial_with_list_comprehension('123.124.123') )

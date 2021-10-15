@@ -17,10 +17,14 @@
 #     return A
 
 def rotate_array(A, K):
-    for i in range(K):
-        pop_item = A.pop()
-        A.insert(0, pop_item)
+    try:
+        for i in range(K):
+            pop_item = A.pop()
+            A.insert(0, pop_item)
+    except Exception as e:
+        print(e)
+        return A
     
     return A  
 
-print(rotate_array([1, 2, 3, 4], 2))
+# print(rotate_array([1, 2, 3, 4], 2))
