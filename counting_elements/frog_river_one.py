@@ -22,22 +22,4 @@ Write a function:
 
 
 """
-
-# X is the length of the river
-    # Y is the array of leaves with their falling times
-
-    # x = 5
-    # y = [1, 3, 1, 4, 2, 3, 5]
-    fun_dict = {}
-
-    for x in range(1, x + 1):
-        fun_dict[x] = False
-
-    # fun_dict = {1: False, 2: False, 3:False, 4:False, 5:False}
-
-    for time, position in zip(range(0, len(y) + 1), y):
-        fun_dict[position] = True
-        if all(value for value in fun_dict.values()):
-            return time
-
-    return -1
+# didn't finish this one
