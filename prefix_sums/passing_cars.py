@@ -1,7 +1,7 @@
 from tictoc import tic, toc
 import numpy as np
 
-~~
+
 def passing_cars(a):
     cars = 0
     try:
