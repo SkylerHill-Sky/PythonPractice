@@ -1,20 +1,6 @@
-# def rotateArray(A, K):
-#     temp = []
-#     i = 0
-#     while (i < K):
-#         temp.append(A[i])
-#         i = i + 1
-#     i = 0
-#     while (K < len(A)):
-#         print(A, i, K)
-#         A[i] = A[K]
-#         i += 1
-#         K += 1
-#     print(temp)
-#     print(A)
-#     A[:] = A[: i] + temp
-#     print(A)
-#     return A
+"""
+Rotate an array to the right by a given number of steps.
+"""
 
 def rotate_array(A, K):
     try:
