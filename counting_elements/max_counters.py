@@ -1,6 +1,3 @@
-# my_list = [0 for x in range(0,n)]
-from tictoc import tic, toc
-import numpy as np
 
 def max_counters(n, a):
     l = [0] * n
@@ -41,17 +38,4 @@ def solution(N, A):
             res[i] = last_update
 
     return res
-
-test_arr = np.random.randint(1,99999,999999)
-n = max(test_arr) - 1
-
-tic()
-a = max_counters(n, test_arr)
-toc()
-
-tic()
-b = solution(n, test_arr)
-toc()
-
-
-assert a == b
+    
