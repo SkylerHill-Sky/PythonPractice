@@ -19,8 +19,8 @@ def test_odd_occurences():
 def test_rotate_array():
     assert rotate_array([1, 2, 3, 4], 2) == [3, 4, 1, 2]
 
-def test_iterations_arrays():
+def test_all_iterations_arrays():
     test_binary_gap()
     test_odd_occurences()
 
-test_iterations_arrays()
+test_all_iterations_arrays()

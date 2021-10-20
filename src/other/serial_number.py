@@ -50,6 +50,3 @@ def serial_with_list_comprehension(strPar):
         return False
 
     return True
-
-# print( serial_old('123.124.123') )
-# print( serial_with_list_comprehension('123.124.123') )
