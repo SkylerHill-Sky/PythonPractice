@@ -10,6 +10,7 @@ class Person():
         self.last_name = last_name if last_name else args[1]
 
     def __str__(self):
+        # todo fix this
         # return ' '.join([self.first_name, self.last_name])
         return 'its breaking'
 
@@ -36,11 +37,3 @@ class Teenager(Person):
         return_dict['phone_number'] = self.phone_number
         return_dict['website'] = self.website
         return return_dict
-
-a = Person('John', 'Doe')
-b = Person(last_name='Bobby', first_name='Ricky')
-c = Teenager('Boy', 'George', 2543667707, 'joehoward.com')
-d = Teenager(first_name='Jack', phone_number='1231231111', last_name='Black', website='google.com')
-
-print('\t'.join([str(a), str(b), str(c), str(d)]))
-# print('\t'.join([dict(a), dict(b), dict(c), d.__dict__]))

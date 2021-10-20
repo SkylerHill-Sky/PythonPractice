@@ -1,7 +1,7 @@
-from tictoc import tic, toc
-
-
-
+"""
+    Compute the number of intersections in a sequence of discs.
+    todo: I don't believe this solution is correct 
+"""
 def solution(a):
     intersections = 0
     eastBound = 0
@@ -13,10 +13,3 @@ def solution(a):
 
     return intersections
 
-arr = [1,5,2,1,4,0]
-
-tic()
-x = solution(arr)
-toc()
-
-print(x)
