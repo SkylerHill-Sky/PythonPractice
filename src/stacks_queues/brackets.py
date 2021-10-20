@@ -1,4 +1,6 @@
-from tictoc import tic, toc
+"""
+    Determine whether a given string of parentheses (multiple types) is properly nested.
+"""
 
 
 def solve(S):
@@ -40,15 +42,4 @@ def balance(myStr):
                 return 0
     if len(stack) == 0:
         return 1
-
-str = "{[()](){}}"*999999
-
-tic()
-a = solve(str)
-toc()
-
-tic()
-b = balance(str)
-toc()
-
-assert a == b
+        
