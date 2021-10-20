@@ -8,7 +8,7 @@ def rotate_array(A, K):
             pop_item = A.pop()
             A.insert(0, pop_item)
     except Exception as e:
-        print(e)
+        print('rotate_array:' + e)
         return A
     
     return A  

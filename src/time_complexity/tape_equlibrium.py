@@ -1,6 +1,12 @@
-a=[1,2,3,4,5]
-print(a[1:])
-print(a[1::])
+"""
+    Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
+
+    todo: not done
+"""
+
+# a=[1,2,3,4,5]
+# print(a[1:])
+# print(a[1::])
 
 # !NOT DONE
 # TapeEquilibrium
