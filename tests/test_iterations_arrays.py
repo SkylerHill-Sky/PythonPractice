@@ -2,8 +2,6 @@ from src.iterations_arrays.binary_gap import *
 from src.iterations_arrays.odd_occurences import *
 from src.iterations_arrays.rotate_array import *
 
-from tictoc import tic, toc
-import numpy as np
 
 def test_binary_gap():
     assert binary_gap(1000000000000000000000000020) == 22
