@@ -12,7 +12,8 @@ from test_iterations_arrays import test_all_iterations_arrays
 from test_other import test_all_other
 from test_prefix_sums import test_all_prefix_sums
 from test_pythonic_ways import test_all_pythonic_ways
-
+from test_sorting import test_all_sorting
+from test_stacks_queues import test_all_stacks_queues
 
 def test_all_practices():
     test_all_counting_elements()
@@ -20,6 +21,8 @@ def test_all_practices():
     test_all_other()
     test_all_prefix_sums()
     test_all_pythonic_ways()
+    test_all_sorting()
+    test_all_stacks_queues()
     
 import this # :) 
 test_all_practices()
