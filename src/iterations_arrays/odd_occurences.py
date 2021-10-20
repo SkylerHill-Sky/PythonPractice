@@ -19,6 +19,7 @@
 
 
 # find odd occurence by sorting
+# deprecated, not really useful to learn from either, doesn't handle edge cases 
 def odd_occurences_with_sort(A):     
     if len(A) == 1:
         return A[0]
@@ -28,8 +29,7 @@ def odd_occurences_with_sort(A):
     for i in range(0 , len(A)-1 , 2):    # moving up twice at a time 
         if A[i] != A[i+1]:  # comparing next index
             return A[i]
-    return A[i]
-
+    # edge cases handled in method below
 """
     find odd occurence by taking difference with exclusive or
 

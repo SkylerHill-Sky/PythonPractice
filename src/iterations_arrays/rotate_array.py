@@ -12,5 +12,3 @@ def rotate_array(A, K):
         return A
     
     return A  
-
-# print(rotate_array([1, 2, 3, 4], 2))

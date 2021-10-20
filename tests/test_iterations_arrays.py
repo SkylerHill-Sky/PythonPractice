@@ -14,13 +14,12 @@ def test_odd_occurences():
     a = odd_occurences_with_sort(test_array)
     b = odd_occurences_with_exclusive_or(test_array)
     assert a == b == 0
-    test_array.append(7)
-    a = odd_occurences_with_sort(test_array)
+    test_array = [6,5,4,3,2,1,1,2,3,4,5,6,7]
     b = odd_occurences_with_exclusive_or(test_array)
-    assert a == b == 7
+    assert  b == 7
 
 def test_rotate_array():
-    pass
+    assert rotate_array([1, 2, 3, 4], 2) == [3, 4, 1, 2]
 
 def test_iterations_arrays():
     test_binary_gap()
