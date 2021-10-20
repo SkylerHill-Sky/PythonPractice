@@ -10,11 +10,13 @@
 from test_counting_elements import test_all_counting_elements
 from test_iterations_arrays import test_all_iterations_arrays
 from test_other import test_all_other
+from test_prefix_sums import test_all_prefix_sums
 
 def test_all_practices():
     test_all_counting_elements()
     test_all_iterations_arrays()
     test_all_other()
+    test_all_prefix_sums()
 
 test_all_practices()
 import this # :) 

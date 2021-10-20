@@ -1,7 +1,16 @@
-from tictoc import tic, toc
-import numpy as np
+"""
+    Count the number of passing cars on the road.
+"""
 
 
+"""
+notes of cars passing, count those going eastwards
+p   w/ q (0,1)    w/2ndQ is (0,3)   w/3rdQ is (0,4) 
+q  
+p  (2,3)   (2,4)
+q
+q
+"""
 def passing_cars(a):
     cars = 0
     try:
@@ -20,7 +29,7 @@ def passing_cars(a):
             return -1
     return cars
 
-# much faster
+# much faster, count cars going eastward
 def passing_cars_new(a):
     pairs = 0
     eastBound = 0
@@ -34,21 +43,3 @@ def passing_cars_new(a):
             return -1
 
     return pairs
-
-"""
-p   w/ q (0,1)    w/2ndQ is (0,3)   w/3rdQ is (0,4) 
-q  
-p  (2,3)   (2,4)
-q
-q
-"""
-arr = np.random.randint(0,1,5999)
-# tic()
-# a = passing_cars(arr)
-# toc()
-
-tic()
-b = passing_cars_new(arr)
-toc()
-
-assert a == b

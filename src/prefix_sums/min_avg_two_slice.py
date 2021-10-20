@@ -1,3 +1,6 @@
+"""
+    Find the minimal average of any slice containing at least two elements.
+"""
 from tictoc import tic, toc
 import numpy as np
 
@@ -12,7 +15,7 @@ import numpy as np
     
 #     return start
 
-# ! this isn't working, i want to change this but i'm too tired
+# todo comeback: ! this isn't working, i want to change this but i'm too tired
 def solution(A):
     amin = sum(A)/len(A)
     imin = 0
@@ -29,14 +32,11 @@ def solution(A):
 
     return imin
 
-arr = np.random.randint(0,9,99)
-arr = [4,2,2,5,1,5,8,1]
+# arr = np.random.randint(0,9,99)
+# arr = [4,2,2,5,1,5,8,1]
 
-tic()
-b = solution(arr)
-toc()
+# tic()
+# b = solution(arr)
+# toc()
 
-print(b)
-
-
-
+# print(b)
