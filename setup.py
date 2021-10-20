@@ -2,12 +2,11 @@
 
 from setuptools import setup, find_packages
 
-def find_packagess():
-    return ['hi']
+# def find_packagess():
+#     return ['hi']
 
-setup(
-    name="pythonpractice",
-    author='Skyler Hill',
-    packages=find_packages()
-    )
+# setup(
+#     name="pythonpractice",
+#     author='Skyler Hill'
+#     )
 
