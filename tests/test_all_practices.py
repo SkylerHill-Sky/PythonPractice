@@ -6,6 +6,7 @@
         might organize my tests into classes - not sure yet
         look into setting up unit test to be customized via commandline
 """
+import this # :) 
 
 from test_counting_elements import test_all_counting_elements
 from test_iterations_arrays import test_all_iterations_arrays
@@ -24,5 +25,5 @@ def test_all_practices():
     test_all_sorting()
     test_all_stacks_queues()
     
-import this # :) 
+
 test_all_practices()
