@@ -1,9 +1,10 @@
+import numpy as np
+
 from src.counting_elements.frog_river_one import *
 from src.counting_elements.max_counters import *
 from src.counting_elements.perm_check import *
 
 # from tictoc import tic, toc
-import numpy as np
 
 def test_frog_river_one():
     pass    # is not done yet
