@@ -42,4 +42,16 @@ def balance(myStr):
                 return 0
     if len(stack) == 0:
         return 1
-        
+
+
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
+#         counter = {}
+#         for item in nums:
+#             if item in counter.keys():
+#                 counter[item] += 1
+#                 if counter[item] > 1:
+#                     return True
+#             else:
+#                 counter[item] = 1
+#         return False
